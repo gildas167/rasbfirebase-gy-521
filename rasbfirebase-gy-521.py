@@ -35,7 +35,7 @@ bus.write_byte_data(DEVICE_ADDRESS, POWER_MGMT_1, 0)
 # Configuration Firebase
 cred = credentials.Certificate('/home/pi/firebase-adminsdk.json')
 firebase_admin.initialize_app(cred, {
-    'databaseURL': 'https://benrover-8ebf6-default-rtdb.firebaseio.com'
+    'databaseURL': 'https://<YOUR_PROJECT_ID>.firebaseio.com'
 })
 ref = db.reference('/gy521_data')
 
